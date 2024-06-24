@@ -1,5 +1,6 @@
 the default login details is
-{username:admin 
+{
+username:admin 
 password:admin123
 }
 you can change these in the script.js
