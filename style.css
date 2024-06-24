@@ -22,6 +22,12 @@ nav {
     cursor: pointer;
 }
 
+input{
+    border-radius:13px;
+    width:250px;
+    height:40px;
+}
+
 ul {
     display: flex;
     margin: 0 23px;
