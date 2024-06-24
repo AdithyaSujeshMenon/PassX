@@ -223,6 +223,6 @@ document.querySelector(".logo").addEventListener("click", handleLogOff);
 if (localStorage.getItem("isLoggedIn") === "true") {
     document.getElementById("login-screen").style.display = "none";
     document.getElementById("password-manager").style.display = "block";
-    document.querySelector(".logo").textContent = "Log-off";
+    document.querySelector(".logo").textContent = "Logoff";
     showPasswords();
                                 }
