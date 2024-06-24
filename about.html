@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PassX</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional style for the info div */
+        .info {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            display: none;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">PassX</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li id="about-link">About</li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to PassX, your personal password manager. We are dedicated to helping you manage your digital life securely and conveniently. With PassX, you can safely store and access all your passwords with ease.</p>
+        <p>Our team is committed to providing you with the best experience possible. Feel free to reach out to us if you have any questions or suggestions!</p>
+    </div>
+
+    
+    <div class="info" id="info-div">
+        <span class="close-btn" onclick="closeInfo()">x</span>
+        <p><strong>Made by Adithya007</strong><br> for his own personal use. It's simple and secure and efficient at the same time.Its on its beta,the developer is testing on it and improving.</p>
+    </div>
+
+    <script>
+        document.getElementById('about-link').addEventListener('click', function() {
+            // Display the additional div when the "About" link is clicked
+            document.getElementById('info-div').style.display = 'block';
+        });
+
+        function closeInfo() {
+            // Hide the additional div when the close button is clicked
+            document.getElementById('info-div').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
